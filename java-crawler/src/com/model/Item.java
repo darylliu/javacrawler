@@ -9,6 +9,22 @@ public class Item {
 	private String type2;
 	private String type3;
 	private String type4;
+	private String type5;
+	private String img;
+	private String url;
+	public String getType5() {
+		return type5;
+	}
+	public void setType5(String type5) {
+		this.type5 = type5;
+	}
+	
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
 	public String getItemId() {
 		return itemId;
 	}
@@ -63,5 +79,20 @@ public class Item {
 	public void setImg(String img) {
 		this.img = img;
 	}
-	private String img;
+	
+	@Override
+	public String toString(){
+		return "item " + itemId +
+				", title is " + title +
+				", sales is " + sales +
+				", price is " + price +
+				", type1 is " + type1 +
+				", type2 is " + type2+
+				", type3 is " + type3 +
+				", type4 is " + type4 +
+				", type5 is " + type5 +
+				", url is " + url +
+				", img is " + img;
+		
+	}
 }
